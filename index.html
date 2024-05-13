@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Default styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        #myHeader {
+            height: 100px;
+            width: 100%;
+            background: linear-gradient(rgb(45, 249, 215), #D9EEE1, rgb(208, 255, 100));
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            position: fixed;
+            top: 0px;
+            z-index: 1000;
+        }
+
+        #myHeader h3 {
+            margin: 0;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        /* Main content styles */
+        .container {
+            margin-top: 150px;
+            padding: 20px;
+        }
+
+        .container2 {
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        /* Media query for tablets and PCs */
+        @media screen and (min-width: 768px) {
+            #myHeader {
+                flex-direction: row;
+            }
+            
+            .nav-item {
+                margin: 0;
+            }
+            
+
+            #top {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: -300px;
+               
+            }
+          
+            #img-top{
+               
+               margin-top: 200px;
+                
+             }
+            #top-img{
+                
+                margin-top: 280px;
+                margin-left: 100px;  
+                border-radius: 47%; 
+            }
+          
+
+            #name {
+                position: absolute;
+                text-align: center;
+                margin-left: 100px;
+                height: 200px;
+                margin-top: 1200px;
+            }
+
+            #link-git-inst-fac {
+                justify-content: space-around;
+                margin-left: 100px;
+                margin-top: 100px;
+            }
+        }
+
+        /* Media query for mobile phones */
+        @media screen and (max-width: 576px) {
+            #myHeader {
+                flex-direction: column;
+                height: auto;
+               
+            }
+
+            .nav-item {
+                margin: 10px 0px;
+            }
+
+            #top {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #img-top {
+                margin: 20px 0;
+            }
+            #top-img{
+                position: absolute;
+                left: 0px;
+                top:370px  ;
+                height: 483px;
+                width: 550px;
+                margin-left:0px;
+                border-radius: 51%;
+                margin-top: 10px;
+            }
+
+            #name {
+                text-align: center;
+                margin-left: 80px;
+                margin-top: 750px;
+                
+                width: 300px;
+               
+            }
+       
+            #link-git-inst-fac {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            .container,
+            .container2 {
+                padding: 10px;
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="myHeader">
+        <div class="nav-item">
+            <a href="about.html" style="text-decoration: none;">
+                <h3>Home</h3>
+            </a>
+        </div>  
+        <div class="nav-item">
+            <a href="about.html" style="text-decoration: none;">
+                <h3>About me</h3>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="skill.html" style="text-decoration: none;">
+                <h3>Skills</h3>
+            </a>
+        </div>
+        <div class="nav-item">
+            <h3>My Portfolio</h3>
+        </div>
+        <div class="nav-item">
+            <a href="project.html" style="text-decoration: none;">
+                <h3>Projects</h3>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="contact.html" style="text-decoration: none;">
+                <button class="btn btn-outline-danger" style="font-size: 18px;">Contact me</button>
+            </a>
+        </div>
+    </div>
+        
+    <!-- Top section -->
+    <div class="container" id="top">
+        <div id="img-top">
+            <img  id="top-img" src="topk.png" alt="top image" >
+        </div> 
+        <div id="name" style="display: flex; gap: 20px;">
+            <div id="bt1">
+                <button class="btn btn-outline-primary " ><h3 style="font-size: 30px;align-items: center;padding-top: 5px;">Khushnoor Farooq</h3></button>
+            </div>
+            <div id="bt2">
+                <button class="btn btn-outline-warning " ><h4 style="font-size: 23px; align-items: center;padding-top: 5px;">Front end developer</h4></button>
+            </div>
+        </div>
+    </div>    
+        <!-- Links to LinkedIn, Instagram, GitHub, and  Facebook -->
+        <br>
+        <br>
+        <div id="link-git-inst-fac" style="display: flex;">
+            <div style="height: 100px;width: 100px;margin-top: 20px;">
+                <a href="https://www.linkedin.com/in/khushnoor-g-8633bb214/" style="text-decoration: none;"><box-icon name='linkedin' type='logo' color='#218c9e' size="lg"></box-icon></a>
+            </div>
+            <div style="height: 100px;width: 100px;margin-top: 20px;">
+                <a href="https://www.instagram.com/khushnoor_gojwari/" style="text-decoration: none;"><box-icon name='instagram' type='logo' color='#ea1518' size="lg"></box-icon></a>
+            </div>
+            <div style="height: 100px;width: 100px;margin-top: 20px;">
+                <a href="https://github.com/Khushnoor-gojwari" style="text-decoration: none;"><box-icon name='github' type='logo' color='#12101' size="lg"></box-icon></a>
+            </div>    
+            <div style="height: 100px;width: 100px;margin-top: 20px;">
+                <a href="https://www.facebook.com/khushnoor.gojwari/" style="text-decoration: none;"><box-icon name='facebook' type='logo' color='#218c9e' size="lg"></box-icon></a>
+            </div> 
+        </div>
+    </div>
+
+    <!-- About Me -->
+   
+</body>
+</html>

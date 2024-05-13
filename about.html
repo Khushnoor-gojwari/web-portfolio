@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="myHeader">
+        <div class="nav-item">
+            <a href="index.html" style="text-decoration: none;">
+                <h3><box-icon name='male' color='#466dbb'></box-icon> Home</h3>
+            </a>
+        </div>  
+        <div class="nav-item">
+            <a href="about.html" style="text-decoration: none;">
+                <h3><box-icon name='male' color='#466dbb'></box-icon> About me</h3>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="skill.html" style="text-decoration: none;">
+                <h3><box-icon name='bulb' color='#4dd6e6'></box-icon> Skills</h3>
+            </a>
+        </div>
+        <div class="nav-item">
+            <h3>My Portfolio</h3>
+        </div>
+        <div class="nav-item">
+            <a href="project.html" style="text-decoration: none;">
+                <h3><box-icon name='bulb' color='#4dd6e6'></box-icon> Projects</h3>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="contact.html" style="text-decoration: none;">
+                <button class="btn btn-outline-danger">Contact me</button>
+            </a>
+        </div>
+    </div>
+    
+    <!-- About Me section -->
+    <div class="container2" id="s12" >
+        <h2 class="aboutme" style="color:rgb(17, 192, 133); ">About Me</h2>
+        <div class="right-img2" >
+            <img src="topk.png" height='400px' width="400px">
+            <h3 id="h21" style="margin-top: 82%;">
+                1. Name: Khushnoor Farooq. <br>
+                2. Pursuing Btech in CSE. <br>
+                3. Campus: <br>
+                University of Kashmir
+            </h3>
+        </div>  
+    </div> 
+        <div class="but" > 
+          <button  class="btn btn-outline-danger btall">1. Highly motivated and results-driven Computer Science engineer with a passion for innovation and problem-solving.</button>
+          <button class="btn btn-outline-primary btall">2. Demonstrates a strong analytical mindset and a keen ability to grasp concepts swiftly.</button>
+          <button class="btn btn-outline-success btall">3. Proven track record of excelling in collaborative environments, showcasing excellent communication and teamwork skills.</button>
+          <button class="btn btn-outline-warning btall">4. Adaptable and eager to embrace new technologies, with a commitment to continuous learning.</button>
+          <button class="btn btn-outline-dark btall">5. A detail-oriented individual with a drive for excellence, seeking opportunities to contribute to cutting-edge projects and advance in the field of computer science.</button>
+        </div>
+    
+
+    
+    <!-- CSS and Media Queries -->
+    <style>
+        /* Header styles */
+        #myHeader {
+            height: 100px;
+            width: 100%;
+            background: linear-gradient(rgb(45, 249, 242), rgb(255, 255, 47), rgb(100, 255, 239));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            z-index: 1000;
+            top: 0px;
+        }
+
+        .nav-item {
+            margin-bottom: 20px;
+        }
+
+        /* About Me section styles */
+        .container2 {
+            margin-top: 20px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .right-img2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .right-img2 img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        #h21 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: olivedrab;
+            text-align: left;
+        }
+
+        .container2 button {
+            width: 100%;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        /* Media queries */
+        @media screen and (min-width: 768px) {
+            .nav-item {
+                margin-bottom: 0;
+            }
+
+            #myHeader {
+                flex-wrap: nowrap;
+            }
+
+            .container2 {
+                
+                justify-content: space-around;
+                align-items: center;
+                text-align: left;
+                margin-top: 110px;
+                height: 800px;
+            }
+            .aboutme{
+                position: absolute;
+                top: 119px;
+                left: 20px;
+            }
+            .right-img2{
+                position: absolute;
+                top: 130px;
+                left: 30%;
+                
+            }
+            .but {
+                margin-top: 100px;
+                margin-left: 20px;
+
+                height: 800px;
+                width: 85%;
+                
+                
+            }
+            .btall{
+                margin-top: 50px;
+                margin-left: 5px;
+                align-items: centre;
+                font-size: 30px;
+            }
+        }
+
+        /* Media queries for mobile phones */
+        @media screen and (max-width: 576px) {
+            #myHeader {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .nav-item {
+                width: 100%;
+            }
+            .container2{
+                margin-top: 400px;
+                height: 800px;
+            }
+            .but {
+                margin-top: 100px;
+                height: 750px;
+                width: auto;
+                font-size: 18px;
+                box-shadow: 10px 10px 5px black;
+            }
+            .btall{
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-right: 10px;
+                font-size: 22px;
+            }
+        }
+    </style>
+</body>
+</html>
